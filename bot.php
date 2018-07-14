@@ -19,9 +19,11 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 	   		$receivetext = $event['message']['text'];
-
-      		$processtext = 'ระบบเบิกวัสดุ แผนกคอมพิวเตอร์ธุรกิจ ลพบีรี'."\n";
-			$processtext .= "fah";
+			
+			if($receivetext=="ดูประวัติล่าสุด"){
+				$processtext = 'ระบบเบิกวัสดุ'."\n";
+				$processtext .= "ไม่มีรายการ";
+			}
 				
 
 		 	 // Build message to reply back
