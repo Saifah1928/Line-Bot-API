@@ -21,10 +21,8 @@ if (!is_null($events['events'])) {
 	   		$receivetext = $event['message']['text'];
 
       		$processtext = 'ระบบเบิกวัสดุ แผนกคอมพิวเตอร์ธุรกิจ ลพบีรี'."\n";
-			$processtext .= $receivetext;
-				if($receivetext="สวัสดี"){
-					echo "สวัดีครับยินดีที่ได้รู้จัก";
-				}
+			$processtext .= "fah";
+				
 
 		 	 // Build message to reply back
 	    		$messages = [
